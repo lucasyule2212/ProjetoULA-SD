@@ -1,5 +1,5 @@
 Flow report for projetoULA
-Sun Mar 28 23:01:39 2021
+Mon Mar 29 00:27:33 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 28 23:01:39 2021       ;
+; Flow Status                        ; Successful - Mon Mar 29 00:27:33 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; projetoULA                                  ;
 ; Top-level Entity Name              ; AANDB                                       ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/28/2021 23:00:07 ;
+; Start date & time ; 03/29/2021 00:26:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; projetoULA          ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 53350627653532.161698320703176         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 53350627653532.161698838012260         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -101,14 +101,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4813 MB             ; 00:00:41                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 5338 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4771 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4753 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4813 MB             ; 00:00:37                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5340 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4771 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4752 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4731 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4725 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
-; Total                ; 00:00:37     ; --                      ; --                  ; 00:00:53                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -135,8 +135,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off projetoULA -c p
 quartus_asm --read_settings_files=off --write_settings_files=off projetoULA -c projetoULA
 quartus_sta projetoULA -c projetoULA
 quartus_eda --read_settings_files=off --write_settings_files=off projetoULA -c projetoULA
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off projetoULA -c projetoULA --vector_source=D:/Programas/QUARTUS/projetoULA/Waveform1.vwf --testbench_file=D:/Programas/QUARTUS/projetoULA/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Programas/QUARTUS/projetoULA/simulation/qsim/ projetoULA -c projetoULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off projetoULA -c projetoULA --vector_source=C:/Users/Admin/OneDrive/Documentos/GitHub/ProjetoULA-SD/projetoULA/Waveform.vwf --testbench_file=C:/Users/Admin/OneDrive/Documentos/GitHub/ProjetoULA-SD/projetoULA/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Admin/OneDrive/Documentos/GitHub/ProjetoULA-SD/projetoULA/simulation/qsim/ projetoULA -c projetoULA
 
 
 
