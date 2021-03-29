@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Mux2x1
+set_global_assignment -name TOP_LEVEL_ENTITY projetoULA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:16:06  MARCH 19, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -51,6 +51,10 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name BSF_FILE Comparador4bitsSinalAltB.bsf
+set_global_assignment -name BSF_FILE Comparador4bitsSinalAgtB.bsf
+set_global_assignment -name BSF_FILE Comparador4bitsSinalAeqB.bsf
+set_global_assignment -name BDF_FILE Comparador4bitsSinalAeqB.bdf
 set_global_assignment -name BSF_FILE Mux2x1.bsf
 set_global_assignment -name BSF_FILE Comparador4bits.bsf
 set_global_assignment -name BSF_FILE Comparador1bit.bsf
@@ -90,6 +94,9 @@ set_global_assignment -name BDF_FILE projetoULA.bdf
 set_global_assignment -name BDF_FILE mux815bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformMux8_1_1bit.vwf
 set_global_assignment -name BDF_FILE testeAnd.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

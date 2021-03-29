@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Mar 27 16:30:54 2021
+Analysis & Synthesis Status : Successful - Sun Mar 28 23:00:30 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : projetoULA
-Top-level Entity Name : Mux2x1
+Top-level Entity Name : AANDB
 Family : Cyclone IV GX
-Total logic elements : 1
-    Total combinational functions : 1
+Total logic elements : 5
+    Total combinational functions : 5
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 4
+Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
